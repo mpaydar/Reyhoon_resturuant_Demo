@@ -1,0 +1,816 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Rayhoon | Persian Kabob House · Parsippany & Morristown, NJ</title>
+<meta name="description" content="Charcoal-grilled Persian kabobs, saffron rice and family stews in Parsippany and Morristown, NJ. Order online for pickup or delivery, or book catering.">
+<meta property="og:title" content="Rayhoon | Persian Kabob House">
+<meta property="og:description" content="Charcoal-grilled kabobs, saffron rice & family recipes in Morris County, NJ.">
+<meta property="og:image" content="assets/img/home-about-section.jpg">
+<meta name="theme-color" content="#0f1e2a">
+<!-- Demo preview: keep out of search engines until the owners approve. Remove at launch. -->
+<meta name="robots" content="noindex, nofollow">
+<link rel="icon" href="assets/img/logo-footer.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Manrope:wght@400;500;600;700&family=Vazirmatn:wght@400;600&display=swap" rel="stylesheet">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {"@type":"Restaurant","name":"Rayhoon Persian Kabob House — Parsippany","servesCuisine":["Persian","Middle Eastern"],
+     "address":{"@type":"PostalAddress","streetAddress":"450 N Beverwyck Rd","addressLocality":"Parsippany-Troy Hills","addressRegion":"NJ","postalCode":"07054","addressCountry":"US"},
+     "telephone":"+1-973-794-6137","openingHours":["Mo-Sa 11:00-21:00","Su 12:00-21:00"],"hasMenu":"#menu"},
+    {"@type":"Restaurant","name":"Rayhoon Persian Kabob House — Morristown","servesCuisine":["Persian","Middle Eastern"],
+     "address":{"@type":"PostalAddress","streetAddress":"84 Speedwell Ave","addressLocality":"Morristown","addressRegion":"NJ","postalCode":"07960","addressCountry":"US"},
+     "telephone":"+1-973-889-8884","openingHours":["Mo-Sa 11:00-21:00","Su 12:00-21:00"],"hasMenu":"#menu"}
+  ]
+}
+</script>
+
+<style>
+:root{
+  --ink:#0f1e2a; --ink-2:#17293a; --ink-3:#22394d;
+  --cream:#f6f0e4; --paper:#fbf7ef; --sand:#e9dfcc;
+  --saffron:#e3a42b; --saffron-deep:#c4851a;
+  --basil:#86c0a4; --basil-deep:#3f7a62;
+  --pom:#b0392c;
+  --text:#1b2834; --muted:#5e6b75;
+  --serif:"Cormorant Garamond", Georgia, serif;
+  --sans:"Manrope", system-ui, sans-serif;
+  --fa:"Vazirmatn", sans-serif;
+  --radius:18px;
+  --arch: 999px 999px 18px 18px;
+  --shadow: 0 30px 60px -30px rgba(15,30,42,.45);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:84px}
+body{font-family:var(--sans);color:var(--text);background:var(--paper);line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+button{font:inherit;cursor:pointer;border:0;background:none;color:inherit}
+.wrap{width:min(1200px,100% - 40px);margin-inline:auto}
+.fa{font-family:var(--fa);direction:rtl}
+.eyebrow{font-size:.72rem;letter-spacing:.28em;text-transform:uppercase;font-weight:700;color:var(--saffron-deep)}
+h1,h2,h3{font-family:var(--serif);font-weight:600;line-height:1.02;letter-spacing:-.01em}
+h2{font-size:clamp(2.4rem,5vw,4rem)}
+h2 em,h1 em{font-style:italic;color:var(--saffron)}
+.lead{font-size:1.08rem;color:var(--muted);max-width:56ch}
+
+/* girih star pattern */
+.pattern{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='72' height='72' viewBox='0 0 72 72'%3E%3Cg fill='none' stroke='%23e3a42b' stroke-opacity='.13' stroke-width='1'%3E%3Cpath d='M36 6l8.5 21.5L66 36l-21.5 8.5L36 66l-8.5-21.5L6 36l21.5-8.5z'/%3E%3Cpath d='M15 15h42v42H15z' transform='rotate(45 36 36)'/%3E%3Ccircle cx='36' cy='36' r='6'/%3E%3C/g%3E%3C/svg%3E")}
+.grain::after{content:"";position:absolute;inset:0;pointer-events:none;opacity:.07;mix-blend-mode:overlay;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='3'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+
+/* buttons */
+.btn{display:inline-flex;align-items:center;gap:.55rem;padding:.95rem 1.5rem;border-radius:999px;font-weight:700;font-size:.92rem;letter-spacing:.02em;transition:transform .25s, background .25s, color .25s, box-shadow .25s}
+.btn:hover{transform:translateY(-2px)}
+.btn-gold{background:var(--saffron);color:var(--ink);box-shadow:0 12px 28px -12px rgba(227,164,43,.8)}
+.btn-gold:hover{background:#f0b440}
+.btn-ghost{border:1.5px solid rgba(246,240,228,.35);color:var(--cream)}
+.btn-ghost:hover{border-color:var(--cream);background:rgba(246,240,228,.06)}
+.btn-ink{background:var(--ink);color:var(--cream)}
+.btn-ink:hover{background:var(--ink-3)}
+.btn svg{width:18px;height:18px}
+
+/* announcement */
+.announce{background:var(--saffron);color:var(--ink);font-size:.82rem;font-weight:600;text-align:center;padding:.5rem 1rem}
+.announce b{font-weight:800}
+
+/* nav */
+header.nav{position:sticky;top:0;z-index:50;background:rgba(15,30,42,.86);backdrop-filter:blur(14px) saturate(140%);-webkit-backdrop-filter:blur(14px) saturate(140%);border-bottom:1px solid rgba(246,240,228,.08)}
+.nav .wrap{display:flex;align-items:center;gap:1.5rem;height:72px}
+.logo img{height:26px;width:auto;filter:brightness(0) invert(.95) sepia(.15)}
+.nav ul{display:flex;gap:1.8rem;list-style:none;margin-left:auto}
+.nav ul a{color:rgba(246,240,228,.78);font-size:.88rem;font-weight:600;letter-spacing:.04em;position:relative}
+.nav ul a::after{content:"";position:absolute;left:0;bottom:-6px;width:0;height:2px;background:var(--saffron);transition:width .3s}
+.nav ul a:hover{color:var(--cream)} .nav ul a:hover::after{width:100%}
+.loc-switch{display:flex;background:rgba(246,240,228,.07);border:1px solid rgba(246,240,228,.12);border-radius:999px;padding:3px}
+.loc-switch button{padding:.42rem .85rem;border-radius:999px;font-size:.76rem;font-weight:700;color:rgba(246,240,228,.7);transition:.25s}
+.loc-switch button[aria-pressed="true"]{background:var(--cream);color:var(--ink)}
+.nav .btn{padding:.7rem 1.15rem;font-size:.85rem}
+.burger{display:none;color:var(--cream);margin-left:auto}
+.burger svg{width:28px;height:28px}
+
+/* hero */
+.hero{position:relative;background:var(--ink);color:var(--cream);overflow:hidden;padding:clamp(3rem,7vw,6rem) 0 clamp(4rem,8vw,7rem)}
+.hero .wrap{display:grid;grid-template-columns:1.05fr .95fr;gap:4rem;align-items:center;position:relative;z-index:2}
+.hero .eyebrow{color:var(--basil)}
+.hero h1{font-size:clamp(3.2rem,7.4vw,6.4rem);margin:1.1rem 0 1.4rem}
+.hero h1 .fa-word{display:block;font-family:var(--fa);font-size:.42em;color:var(--basil);font-weight:400;margin-bottom:.3rem;letter-spacing:0}
+.hero p.lead{color:rgba(246,240,228,.72)}
+.hero-ctas{display:flex;flex-wrap:wrap;gap:.9rem;margin-top:2.2rem}
+.status{display:inline-flex;align-items:center;gap:.6rem;margin-top:2rem;font-size:.85rem;color:rgba(246,240,228,.8);background:rgba(246,240,228,.06);border:1px solid rgba(246,240,228,.12);padding:.5rem .95rem;border-radius:999px}
+.dot{width:9px;height:9px;border-radius:50%;background:var(--basil);box-shadow:0 0 0 0 rgba(134,192,164,.7);animation:pulse 2s infinite;flex:none}
+.dot.closed{background:var(--pom);animation:none}
+@keyframes pulse{70%{box-shadow:0 0 0 10px rgba(134,192,164,0)}100%{box-shadow:0 0 0 0 rgba(134,192,164,0)}}
+.hero-art{position:relative;justify-self:center;width:min(100%,480px)}
+.arch{border-radius:var(--arch);overflow:hidden;aspect-ratio:3/4;box-shadow:var(--shadow);position:relative}
+.arch img{width:100%;height:100%;object-fit:cover;transform:scale(1.06);transition:transform 1.2s}
+.hero-art:hover .arch img{transform:scale(1.12)}
+.arch-frame{position:absolute;inset:-14px;border:1.5px solid rgba(227,164,43,.45);border-radius:var(--arch);pointer-events:none}
+.seal{position:absolute;left:-46px;bottom:48px;width:128px;height:128px;border-radius:50%;background:var(--cream);display:grid;place-items:center;box-shadow:var(--shadow);animation:spin 28s linear infinite}
+.seal img{width:112px}
+@keyframes spin{to{transform:rotate(360deg)}}
+.chip-float{position:absolute;right:-24px;top:64px;background:var(--cream);color:var(--ink);border-radius:14px;padding:.8rem 1rem;box-shadow:var(--shadow);font-size:.8rem;line-height:1.3}
+.chip-float b{font-family:var(--serif);font-size:1.35rem;display:block}
+.hero .pattern{position:absolute;inset:0;mask-image:radial-gradient(circle at 80% 40%,#000 0,transparent 65%);-webkit-mask-image:radial-gradient(circle at 80% 40%,#000 0,transparent 65%)}
+.glow{position:absolute;width:640px;height:640px;border-radius:50%;background:radial-gradient(circle,rgba(227,164,43,.22),transparent 65%);right:-120px;top:-80px;filter:blur(20px)}
+
+/* load animation */
+.rise{opacity:0;transform:translateY(24px);animation:rise .9s cubic-bezier(.2,.7,.2,1) forwards}
+@keyframes rise{to{opacity:1;transform:none}}
+.reveal{opacity:0;transform:translateY(30px);transition:opacity .9s cubic-bezier(.2,.7,.2,1),transform .9s cubic-bezier(.2,.7,.2,1)}
+.reveal.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.rise,.reveal{opacity:1;transform:none}}
+
+/* marquee */
+.marquee{background:var(--saffron);color:var(--ink);overflow:hidden;white-space:nowrap;padding:1rem 0;border-block:1px solid var(--saffron-deep)}
+.marquee-track{display:inline-flex;gap:2.5rem;animation:scroll 40s linear infinite;font-family:var(--serif);font-size:1.6rem;font-style:italic;font-weight:600}
+.marquee-track span{display:inline-flex;align-items:center;gap:2.5rem}
+.marquee-track span::after{content:"✦";font-style:normal;font-size:.9rem;color:var(--ink-3)}
+@keyframes scroll{to{transform:translateX(-50%)}}
+
+section{position:relative}
+.sec{padding:clamp(4.5rem,9vw,8rem) 0}
+.sec-head{display:flex;justify-content:space-between;align-items:end;gap:2rem;margin-bottom:3.2rem;flex-wrap:wrap}
+.sec-head h2{margin-top:.6rem}
+
+/* signatures */
+.sig-grid{display:grid;grid-template-columns:repeat(12,1fr);gap:1.4rem}
+.dish{position:relative;border-radius:var(--radius);overflow:hidden;background:var(--ink);color:var(--cream);isolation:isolate;min-height:340px;display:flex;align-items:flex-end}
+.dish img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2;transition:transform .9s cubic-bezier(.2,.7,.2,1)}
+.dish::before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,transparent 35%,rgba(15,30,42,.92))}
+.dish:hover img{transform:scale(1.07)}
+.dish .body{padding:1.5rem 1.6rem}
+.dish .fa{color:var(--saffron);font-size:1rem;display:block;text-align:left;direction:ltr}
+.dish h3{font-size:2rem;margin:.15rem 0 .35rem}
+.dish p{font-size:.88rem;color:rgba(246,240,228,.78);max-width:42ch}
+.dish:nth-child(1){grid-column:span 7;min-height:460px}
+.dish:nth-child(2){grid-column:span 5;min-height:460px}
+.dish:nth-child(3),.dish:nth-child(4),.dish:nth-child(5){grid-column:span 4}
+.tag{position:absolute;top:1.1rem;left:1.1rem;background:var(--cream);color:var(--ink);font-size:.68rem;font-weight:800;letter-spacing:.14em;text-transform:uppercase;padding:.35rem .7rem;border-radius:999px}
+
+/* story */
+.story{background:var(--cream)}
+.story .wrap{display:grid;grid-template-columns:1fr 1fr;gap:clamp(2rem,6vw,6rem);align-items:center}
+.story-art{position:relative}
+.story-art .arch{aspect-ratio:4/5}
+.story-art .small{position:absolute;right:-30px;bottom:-40px;width:46%;border-radius:var(--radius);overflow:hidden;border:8px solid var(--cream);box-shadow:var(--shadow)}
+.basil-word{font-family:var(--fa);font-size:clamp(4rem,9vw,7rem);color:var(--basil-deep);line-height:1;opacity:.9}
+.story h2{margin:.8rem 0 1.4rem}
+.story p{color:var(--muted);margin-bottom:1rem}
+.pillars{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin-top:2.2rem;border-top:1px solid var(--sand);padding-top:1.8rem}
+.pillars div b{font-family:var(--serif);font-size:1.5rem;display:block;color:var(--ink);line-height:1.1;margin-bottom:.3rem}
+.pillars div{font-size:.85rem;color:var(--muted)}
+.creds{display:flex;gap:.6rem;flex-wrap:wrap;margin-top:1.4rem}
+.creds span{font-size:.75rem;font-weight:700;padding:.4rem .8rem;border-radius:999px;border:1px solid var(--sand);background:var(--paper);color:var(--ink-3)}
+
+/* menu */
+.menu-sec{background:var(--ink);color:var(--cream);overflow:hidden}
+.menu-sec .pattern{position:absolute;inset:0;opacity:.7}
+.menu-sec .lead{color:rgba(246,240,228,.65)}
+.menu-tools{display:flex;gap:1rem;flex-wrap:wrap;align-items:center;margin-bottom:1.6rem;position:relative}
+.search{flex:1 1 260px;display:flex;align-items:center;gap:.6rem;background:rgba(246,240,228,.06);border:1px solid rgba(246,240,228,.14);border-radius:999px;padding:.75rem 1.1rem}
+.search input{flex:1;min-width:0;background:none;border:0;outline:0;color:var(--cream);font:inherit;font-size:.95rem}
+.search input::placeholder{color:rgba(246,240,228,.45)}
+.search svg{width:18px;opacity:.6;flex:none}
+.toggle{display:inline-flex;align-items:center;gap:.55rem;font-size:.85rem;font-weight:600;color:rgba(246,240,228,.8);cursor:pointer;user-select:none}
+.toggle input{appearance:none;-webkit-appearance:none;width:42px;height:24px;border-radius:999px;background:rgba(246,240,228,.18);position:relative;cursor:pointer;transition:.25s}
+.toggle input::after{content:"";position:absolute;top:3px;left:3px;width:18px;height:18px;border-radius:50%;background:var(--cream);transition:.25s}
+.toggle input:checked{background:var(--basil-deep)}
+.toggle input:checked::after{left:21px}
+.tabs{display:flex;gap:.5rem;overflow-x:auto;padding-bottom:.6rem;margin-bottom:2.2rem;scrollbar-width:none;position:relative}
+.tabs::-webkit-scrollbar{display:none}
+.tabs button{flex:none;padding:.6rem 1.1rem;border-radius:999px;border:1px solid rgba(246,240,228,.16);font-size:.82rem;font-weight:700;color:rgba(246,240,228,.75);transition:.25s;white-space:nowrap}
+.tabs button:hover{border-color:rgba(246,240,228,.4);color:var(--cream)}
+.tabs button[aria-selected="true"]{background:var(--saffron);border-color:var(--saffron);color:var(--ink)}
+.menu-note{position:relative;font-size:.88rem;color:rgba(246,240,228,.7);margin:-1rem 0 1.8rem;padding-left:1rem;border-left:2px solid var(--saffron)}
+.menu-list{display:grid;grid-template-columns:1fr 1fr;gap:.2rem 3.5rem;position:relative;min-height:200px}
+.item{padding:1.1rem 0;border-bottom:1px dashed rgba(246,240,228,.14);animation:rise .5s both}
+.item-top{display:flex;align-items:baseline;gap:.6rem}
+.item h4{font-family:var(--serif);font-size:1.45rem;font-weight:600;letter-spacing:.005em}
+.item .fa{font-size:.9rem;color:var(--saffron);margin-left:auto;white-space:nowrap}
+.item p{font-size:.86rem;color:rgba(246,240,228,.62);margin-top:.2rem;max-width:52ch}
+.item .cat{font-size:.7rem;letter-spacing:.16em;text-transform:uppercase;color:rgba(227,164,43,.7);margin-top:.35rem}
+.v{display:inline-grid;place-items:center;width:20px;height:20px;border-radius:50%;background:var(--basil-deep);color:#fff;font-size:.62rem;font-weight:800;flex:none;transform:translateY(-2px)}
+.price{font-family:var(--serif);font-size:1.3rem;color:var(--saffron);font-weight:600;margin-left:auto}
+.item .fa + .price{margin-left:.6rem}
+.empty{grid-column:1/-1;text-align:center;color:rgba(246,240,228,.6);padding:3rem 0;font-style:italic;font-family:var(--serif);font-size:1.4rem}
+.lunch{position:relative;margin-top:3.5rem;display:grid;grid-template-columns:auto 1fr auto;gap:2rem;align-items:center;background:linear-gradient(120deg,var(--saffron),#f0bf5a);color:var(--ink);border-radius:var(--radius);padding:1.8rem 2.2rem}
+.lunch .big{font-family:var(--serif);font-size:3.6rem;font-weight:700;line-height:1}
+.lunch h3{font-size:1.9rem}
+.lunch p{font-size:.88rem;opacity:.85}
+.disclaimer{position:relative;margin-top:1.4rem;font-size:.76rem;color:rgba(246,240,228,.45)}
+
+/* locations */
+.loc-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.6rem}
+.loc{background:#fff;border-radius:22px;overflow:hidden;border:1px solid var(--sand);display:flex;flex-direction:column;transition:box-shadow .3s, transform .3s, opacity .9s}
+.loc:hover{box-shadow:var(--shadow)}
+.loc.active{outline:2px solid var(--saffron);outline-offset:4px}
+.loc iframe{width:100%;height:260px;border:0;filter:grayscale(.35) contrast(1.05);display:block;background:var(--sand)}
+.loc .body{padding:1.8rem 2rem 2rem;display:flex;flex-direction:column;gap:1rem;flex:1}
+.loc h3{font-size:2.4rem}
+.loc .meta{display:grid;grid-template-columns:1fr 1fr;gap:1rem;font-size:.9rem}
+.loc .meta small{display:block;font-size:.68rem;letter-spacing:.2em;text-transform:uppercase;font-weight:800;color:var(--saffron-deep);margin-bottom:.25rem}
+.loc .blurb{font-size:.9rem;color:var(--muted)}
+.loc .row{display:flex;gap:.6rem;flex-wrap:wrap;margin-top:auto}
+.loc .row .btn{padding:.75rem 1.1rem;font-size:.82rem}
+.btn-line{border:1.5px solid var(--sand);color:var(--ink)}
+.btn-line:hover{border-color:var(--ink)}
+.status-sm{display:inline-flex;align-items:center;gap:.5rem;font-size:.8rem;font-weight:700;color:var(--basil-deep)}
+.status-sm.closed{color:var(--pom)}
+
+/* catering */
+.catering{background:var(--ink);color:var(--cream);overflow:hidden}
+.catering .wrap{display:grid;grid-template-columns:.9fr 1.1fr;gap:clamp(2rem,6vw,5rem);align-items:start;position:relative;z-index:1}
+.catering .lead{color:rgba(246,240,228,.68)}
+.catering ul.perks{list-style:none;margin-top:2rem;display:grid;gap:.9rem}
+.catering ul.perks li{display:flex;gap:.8rem;align-items:flex-start;font-size:.95rem;color:rgba(246,240,228,.85)}
+.catering ul.perks li::before{content:"✦";color:var(--saffron)}
+.cat-img{margin-top:2.4rem;border-radius:var(--radius);overflow:hidden;aspect-ratio:16/10}
+.cat-img img{width:100%;height:100%;object-fit:cover}
+form.card{background:var(--cream);color:var(--text);border-radius:24px;padding:clamp(1.5rem,4vw,2.6rem);box-shadow:0 40px 80px -40px rgba(0,0,0,.6)}
+.card h3{font-size:2.1rem;color:var(--ink);margin-bottom:.3rem}
+.card .sub{font-size:.88rem;color:var(--muted);margin-bottom:1.6rem}
+.fields{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+.f{display:flex;flex-direction:column;gap:.35rem;min-width:0}
+.f.full{grid-column:1/-1}
+.f > label{font-size:.72rem;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-3)}
+.f input,.f select,.f textarea{font:inherit;font-size:.95rem;padding:.8rem .95rem;border-radius:12px;border:1.5px solid var(--sand);background:#fff;color:var(--text);outline:0;transition:border-color .2s, box-shadow .2s;width:100%}
+.f input:focus,.f select:focus,.f textarea:focus{border-color:var(--saffron);box-shadow:0 0 0 4px rgba(227,164,43,.18)}
+.f input.err{border-color:var(--pom)}
+.trays{display:flex;flex-wrap:wrap;gap:.45rem}
+.trays label{font-size:.8rem;font-weight:600;cursor:pointer;position:relative}
+.trays input{position:absolute;opacity:0;width:1px;height:1px}
+.trays span{display:inline-block;padding:.45rem .85rem;border-radius:999px;border:1.5px solid var(--sand);background:#fff;transition:.2s;color:var(--ink-3)}
+.trays input:checked+span{background:var(--ink);color:var(--cream);border-color:var(--ink)}
+.trays input:focus-visible+span{box-shadow:0 0 0 3px rgba(227,164,43,.5)}
+.card .btn{margin-top:1.4rem;width:100%;justify-content:center}
+.success{text-align:center;padding:2rem 0}
+.success .tick{width:72px;height:72px;margin:0 auto 1rem;border-radius:50%;background:var(--basil-deep);display:grid;place-items:center;color:#fff;font-size:2rem}
+
+/* footer */
+footer{background:#0a151e;color:rgba(246,240,228,.7);padding:5rem 0 7rem;font-size:.9rem}
+footer .grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:2.5rem}
+footer h5{font-size:.72rem;letter-spacing:.24em;text-transform:uppercase;color:var(--saffron);margin-bottom:1rem}
+footer a:hover{color:var(--cream)}
+footer .bigword{font-family:var(--serif);font-size:clamp(3rem,12vw,10rem);color:rgba(246,240,228,.06);line-height:.9;margin-top:3rem;letter-spacing:-.02em;white-space:nowrap;overflow:hidden}
+.socials{display:flex;gap:.6rem;margin-top:1.2rem}
+.socials a{width:42px;height:42px;border-radius:50%;border:1px solid rgba(246,240,228,.18);display:grid;place-items:center;transition:.25s}
+.socials a:hover{background:var(--saffron);color:var(--ink);border-color:var(--saffron)}
+.socials svg{width:18px;height:18px}
+.legal{display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap;border-top:1px solid rgba(246,240,228,.08);padding-top:1.6rem;margin-top:1rem;font-size:.78rem}
+
+/* modal */
+.modal{position:fixed;inset:0;z-index:100;display:grid;place-items:center;padding:1rem;background:rgba(10,21,30,.6);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);opacity:0;pointer-events:none;transition:opacity .3s}
+.modal.open{opacity:1;pointer-events:auto}
+.sheet{background:var(--cream);border-radius:24px;width:min(480px,100%);padding:2rem;transform:translateY(20px) scale(.98);transition:transform .35s cubic-bezier(.2,.7,.2,1);position:relative}
+.modal.open .sheet{transform:none}
+.sheet h3{font-size:2.2rem;color:var(--ink);padding-right:2rem}
+.sheet .sub{color:var(--muted);font-size:.9rem;margin:.3rem 0 1.4rem}
+.sheet .loc-switch{background:var(--sand);border-color:transparent;margin-bottom:1.2rem;width:max-content}
+.sheet .loc-switch button{color:var(--ink-3)}
+.sheet .loc-switch button[aria-pressed="true"]{background:var(--ink);color:var(--cream)}
+.platforms{display:grid;gap:.6rem}
+.platforms a{display:flex;align-items:center;justify-content:space-between;padding:1rem 1.2rem;border-radius:14px;background:#fff;border:1.5px solid var(--sand);font-weight:700;transition:.2s}
+.platforms a:hover{border-color:var(--ink);transform:translateX(4px)}
+.platforms a small{display:block;font-weight:500;color:var(--muted);font-size:.78rem}
+.platforms a.primary{background:var(--ink);color:var(--cream);border-color:var(--ink)}
+.platforms a.primary small{color:rgba(246,240,228,.6)}
+.close{position:absolute;top:1rem;right:1rem;width:38px;height:38px;border-radius:50%;background:var(--sand);display:grid;place-items:center;font-size:1.1rem}
+.callrow{margin-top:1rem;font-size:.85rem;color:var(--muted);text-align:center}
+.callrow a{color:var(--ink);font-weight:700;text-decoration:underline;text-underline-offset:3px}
+
+/* mobile drawer + action bar */
+.drawer{position:fixed;inset:0;z-index:90;background:var(--ink);color:var(--cream);padding:6rem 1.6rem 2rem;display:flex;flex-direction:column;gap:1.4rem;transform:translateY(-100%);transition:transform .45s cubic-bezier(.2,.7,.2,1);visibility:hidden}
+.drawer.open{transform:none;visibility:visible}
+.drawer a.l{font-family:var(--serif);font-size:2.6rem;font-weight:600}
+.drawer .close{background:rgba(246,240,228,.1);color:var(--cream);top:1.2rem;right:1.2rem}
+.actionbar{display:none;position:fixed;left:12px;right:12px;bottom:12px;z-index:60;background:var(--ink);border-radius:18px;padding:.45rem;box-shadow:0 20px 40px -10px rgba(0,0,0,.5);grid-template-columns:1fr 1fr 1.3fr;gap:.4rem}
+.actionbar a,.actionbar button{display:flex;align-items:center;justify-content:center;gap:.4rem;padding:.8rem .4rem;border-radius:13px;color:var(--cream);font-size:.82rem;font-weight:700}
+.actionbar .go{background:var(--saffron);color:var(--ink)}
+.actionbar svg{width:17px;height:17px}
+
+/* responsive */
+@media (max-width:1020px){
+  .nav ul,.nav .loc-switch,.nav .btn{display:none}
+  .burger{display:block}
+  .hero .wrap,.story .wrap,.catering .wrap{grid-template-columns:1fr}
+  .hero-art{width:min(82%,400px);margin-top:1rem}
+  .story-art{max-width:520px}
+  .dish:nth-child(n){grid-column:span 6;min-height:340px}
+  .dish:nth-child(5){grid-column:span 12}
+}
+@media (max-width:720px){
+  .wrap{width:calc(100% - 32px)}
+  .menu-list,.loc-grid,.fields{grid-template-columns:1fr}
+  .dish:nth-child(n){grid-column:span 12;min-height:300px}
+  .lunch{grid-template-columns:1fr;gap:.8rem;padding:1.6rem}
+  .pillars{grid-template-columns:1fr}
+  footer .grid{grid-template-columns:1fr 1fr}
+  .actionbar{display:grid}
+  .seal{left:-18px;width:96px;height:96px;bottom:30px} .seal img{width:84px}
+  .chip-float{right:-10px}
+  .story-art .small{right:-8px}
+  .loc .body{padding:1.4rem}
+  .announce{font-size:.74rem}
+}
+</style>
+</head>
+<body>
+
+<div class="announce" id="announce">Lunch specials <b>$14.95</b> · Mon–Fri 11am–3pm, with saffron rice & garden salad</div>
+
+<header class="nav">
+  <div class="wrap">
+    <a href="#top" class="logo" aria-label="Rayhoon home"><img src="assets/img/rayhoon-logo@2x.png" alt="Rayhoon"></a>
+    <ul>
+      <li><a href="#signatures">Signatures</a></li>
+      <li><a href="#menu">Menu</a></li>
+      <li><a href="#story">Our Story</a></li>
+      <li><a href="#locations">Locations</a></li>
+      <li><a href="#catering">Catering</a></li>
+    </ul>
+    <div class="loc-switch" role="group" aria-label="Choose location" data-locswitch>
+      <button data-loc="parsippany">Parsippany</button>
+      <button data-loc="morristown">Morristown</button>
+    </div>
+    <button class="btn btn-gold" data-order>Order Online</button>
+    <button class="burger" aria-label="Open menu" id="burger"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 7h16M4 12h16M4 17h10"/></svg></button>
+  </div>
+</header>
+
+<div class="drawer" id="drawer" aria-hidden="true">
+  <button class="close" id="drawerClose" aria-label="Close">✕</button>
+  <a class="l" href="#signatures">Signatures</a>
+  <a class="l" href="#menu">Menu</a>
+  <a class="l" href="#story">Our Story</a>
+  <a class="l" href="#locations">Locations</a>
+  <a class="l" href="#catering">Catering</a>
+  <div class="loc-switch" role="group" aria-label="Choose location" data-locswitch style="width:max-content">
+    <button data-loc="parsippany">Parsippany</button>
+    <button data-loc="morristown">Morristown</button>
+  </div>
+  <button class="btn btn-gold" data-order style="justify-content:center">Order Online</button>
+</div>
+
+<main id="top">
+<!-- HERO -->
+<section class="hero grain">
+  <div class="pattern"></div><div class="glow"></div>
+  <div class="wrap">
+    <div>
+      <div class="eyebrow rise" style="animation-delay:.05s">Persian Kabob House · Morris County, NJ</div>
+      <h1 class="rise" style="animation-delay:.15s"><span class="fa-word">ریحون</span>Charcoal, saffron <em>&amp;</em> a little basil.</h1>
+      <p class="lead rise" style="animation-delay:.3s">Hand-ground koobideh off the open flame, fluffy saffron basmati and slow-simmered family stews, cooked from original recipes by brothers Mehdi &amp; Reza Kazerani.</p>
+      <div class="hero-ctas rise" style="animation-delay:.45s">
+        <button class="btn btn-gold" data-order>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 7h12l-1 13H7L6 7z"/><path d="M9 7a3 3 0 016 0"/></svg>
+          Order for pickup or delivery</button>
+        <a href="#menu" class="btn btn-ghost">Explore the menu →</a>
+      </div>
+      <div class="status rise" style="animation-delay:.6s"><span class="dot" data-dot></span><span data-status>Checking hours…</span></div>
+    </div>
+    <div class="hero-art rise" style="animation-delay:.3s">
+      <div class="arch-frame"></div>
+      <div class="arch"><img src="assets/img/Home-menu-section.jpg" alt="Koobideh kabob with saffron rice and grilled tomato"></div>
+      <div class="seal"><img src="assets/img/logo-footer.png" alt=""></div>
+      <div class="chip-float"><b>Two locations</b>Parsippany · Morristown</div>
+    </div>
+  </div>
+</section>
+
+<div class="marquee" aria-hidden="true"><div class="marquee-track" id="marquee"></div></div>
+
+<!-- SIGNATURES -->
+<section class="sec" id="signatures">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div><div class="eyebrow">From the grill &amp; the pot</div><h2>House <em>signatures</em></h2></div>
+      <p class="lead">The dishes regulars come back for. Every kabob is served with saffron basmati rice, a grilled tomato and pepper.</p>
+    </div>
+    <div class="sig-grid">
+      <article class="dish reveal"><img src="assets/img/home-about-section.jpg" alt="A spread of Persian dishes" loading="lazy"><span class="tag">For the table</span>
+        <div class="body"><span class="fa">کمبو ریحون</span><h3>Rayhoon Combo</h3><p>Serves 2–3. A skewer of chicken, a skewer of barg, two koobideh, two rice and two tomatoes.</p></div></article>
+      <article class="dish reveal"><img src="assets/img/Menu-GhormehSabzi.jpg" alt="Ghormeh sabzi stew" loading="lazy"><span class="tag">Iran's national stew</span>
+        <div class="body"><span class="fa">قورمه سبزی</span><h3>Ghormeh Sabzi</h3><p>Lamb slow-cooked with parsley, cilantro, chives, fenugreek, kidney beans and dried Persian limes.</p></div></article>
+      <article class="dish reveal"><img src="assets/img/Menu-BaghaliPoloWithLambShank.jpg" alt="Baghali polo with lamb shank" loading="lazy">
+        <div class="body"><span class="fa">باقالی پلو با ماهیچه</span><h3>Lamb Shank</h3><p>Braised with herbs and garlic over dill &amp; fava-bean saffron rice.</p></div></article>
+      <article class="dish reveal"><img src="assets/img/Menu-KhoreshtGheymeh.jpg" alt="Khoresht gheymeh" loading="lazy">
+        <div class="body"><span class="fa">خورش قیمه</span><h3>Gheymeh</h3><p>Lamb, yellow split peas and dried lime, crowned with crispy shoestring potatoes.</p></div></article>
+      <article class="dish reveal"><img src="assets/img/Menu-Baklava.jpg" alt="Baklava" loading="lazy">
+        <div class="body"><span class="fa">باقلوا</span><h3>Baklava</h3><p>Finish with baklava, zoolbia bamieh in rose-saffron syrup, or homemade saffron ice cream.</p></div></article>
+    </div>
+  </div>
+</section>
+
+<!-- STORY -->
+<section class="sec story" id="story">
+  <div class="wrap">
+    <div class="story-art reveal">
+      <div class="arch"><img src="assets/img/Menu-Hummus.jpg" alt="Hummus" loading="lazy"></div>
+      <div class="small"><img src="assets/img/Menu-Dolmeh.jpg" alt="Dolmeh stuffed grape leaves" loading="lazy"></div>
+    </div>
+    <div class="reveal">
+      <div class="basil-word">ریحون</div>
+      <div class="eyebrow" style="margin-top:.6rem">Rayhoon — Persian for “basil”</div>
+      <h2>Two brothers, <em>one table.</em></h2>
+      <p>Rayhoon is the work of brothers <b>Mehdi and Reza Kazerani</b>, who brought their love of food and hospitality together under one roof.</p>
+      <p>Mehdi spent more than 20 years alongside Chef Peter Loria and Larry Falcone at Café Matisse, a Michelin-nominated, Zagat-rated room once named among America's top 100 restaurants. Reza brings his culinary training from the prestigious Hotel Espinas in Iran, along with the recipes of home.</p>
+      <div class="creds"><span>20+ yrs fine dining</span><span>Café Matisse alum</span><span>Hotel Espinas, Iran</span></div>
+      <div class="pillars">
+        <div><b>Fresh, daily</b>We buy only fresh ingredients.</div>
+        <div><b>By hand</b>Everything is prepared by our hands and our hearts.</div>
+        <div><b>Original</b>All recipes are our own.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MENU -->
+<section class="sec menu-sec grain" id="menu">
+  <div class="pattern"></div>
+  <div class="wrap">
+    <div class="sec-head reveal" style="position:relative">
+      <div><div class="eyebrow" style="color:var(--saffron)">The full menu</div><h2>Something for <em>every</em> craving</h2></div>
+      <p class="lead">Search by dish or ingredient, or tap a category. <span class="v" style="transform:none">V</span> marks vegetarian dishes.</p>
+    </div>
+    <div class="menu-tools">
+      <label class="search"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>
+        <input id="q" type="search" placeholder="Try “eggplant”, “lamb” or “saffron”…" aria-label="Search the menu"></label>
+      <label class="toggle"><input type="checkbox" id="vegOnly"> Vegetarian only</label>
+    </div>
+    <div class="tabs" role="tablist" id="tabs"></div>
+    <p class="menu-note" id="menuNote" hidden></p>
+    <div class="menu-list" id="menuList" aria-live="polite"></div>
+
+    <div class="lunch reveal">
+      <div class="big">$14.95</div>
+      <div><h3>Weekday Lunch Specials</h3><p>Monday to Friday, 11am–3pm. Koobideh, chicken kabob, gyro or falafel, each with saffron basmati rice and garden salad.</p></div>
+      <button class="btn btn-ink" data-order>Order lunch</button>
+    </div>
+    <p class="disclaimer">Menu reflects our Parsippany kitchen; Morristown offerings are nearly identical. Vegetarian tags are a guide. Please tell your server about any allergies.</p>
+  </div>
+</section>
+
+<!-- LOCATIONS -->
+<section class="sec" id="locations">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div><div class="eyebrow">Come hungry</div><h2>Two homes in <em>Morris County</em></h2></div>
+      <p class="lead">Same charcoal-grilled kabobs, fresh-baked bread and family recipes at both. Dine in, pick up, or have it delivered.</p>
+    </div>
+    <div class="loc-grid" id="locGrid"></div>
+  </div>
+</section>
+
+<!-- CATERING -->
+<section class="sec catering grain" id="catering">
+  <div class="pattern" style="position:absolute;inset:0;opacity:.6"></div>
+  <div class="wrap">
+    <div class="reveal">
+      <div class="eyebrow" style="color:var(--basil)">Catering</div>
+      <h2 style="margin:.6rem 0 1.2rem">Feed a crowd, <em>Persian style.</em></h2>
+      <p class="lead">Office lunches, Nowruz, birthdays, Yalda night. We bring full trays of kabobs, stews and saffron rice, ready to set out.</p>
+      <ul class="perks">
+        <li>Trays of koobideh, barg, chicken, chenjeh, jojeh, shrimp &amp; salmon</li>
+        <li>Ghormeh sabzi, gheymeh, gheymeh bademjan &amp; fesenjan</li>
+        <li>Saffron rice and grilled tomatoes for the whole table</li>
+        <li>Pickup from either location; we'll confirm details by phone</li>
+      </ul>
+      <div class="cat-img"><img src="assets/img/Menu-Falafel.jpg" alt="Falafel" loading="lazy"></div>
+    </div>
+    <form class="card reveal" id="catForm" novalidate>
+      <div id="catFields">
+        <h3>Request a catering quote</h3>
+        <p class="sub">Tell us about your event and we'll get back to you within one business day.</p>
+        <div class="fields">
+          <div class="f"><label for="cn">Name</label><input id="cn" name="name" required autocomplete="name"></div>
+          <div class="f"><label for="cp">Phone</label><input id="cp" name="phone" type="tel" required autocomplete="tel" placeholder="(973) 555-0123" pattern="[\d\s\(\)\+\.\-]{7,}"></div>
+          <div class="f"><label for="cd">Event date</label><input id="cd" name="date" type="date" required></div>
+          <div class="f"><label for="cg">Guests</label><input id="cg" name="guests" type="number" min="5" max="500" required placeholder="25"></div>
+          <div class="f full"><label for="cl">Location</label>
+            <select id="cl" name="loc"><option value="parsippany">Parsippany · 450 N Beverwyck Rd</option><option value="morristown">Morristown · 84 Speedwell Ave</option></select></div>
+          <div class="f full"><label>Trays you're interested in</label><div class="trays" id="trays"></div></div>
+          <div class="f full"><label for="cm">Anything else?</label><textarea id="cm" name="notes" rows="3" placeholder="Dietary needs, delivery questions, timing…"></textarea></div>
+        </div>
+        <button class="btn btn-gold" type="submit">Send request</button>
+      </div>
+      <div class="success" id="catOk" hidden>
+        <div class="tick">✓</div>
+        <h3>Merci! Request received.</h3>
+        <p class="sub" id="catOkMsg"></p>
+      </div>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="grid">
+      <div>
+        <img src="assets/img/rayhoon-logo@2x.png" alt="Rayhoon" style="height:26px;width:auto;filter:brightness(0) invert(.92)">
+        <p style="margin-top:1.2rem;max-width:34ch">Authentic Persian cooking from family recipes, charcoal-grilled in Parsippany and Morristown, New Jersey.</p>
+        <div class="socials">
+          <a href="https://www.instagram.com/rayhoon_kabob_house_nj/" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg></a>
+          <a href="https://www.facebook.com/RayhoonNJ/" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M14 8h3V4h-3c-2.8 0-4 1.8-4 4v2H7v4h3v8h4v-8h3l1-4h-4V8.5c0-.3.2-.5.5-.5z"/></svg></a>
+          <a href="https://www.yelp.com/biz/rayhoon-persian-kabob-house-parsippany-2" target="_blank" rel="noopener" aria-label="Yelp"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.6 6.9L22 9.3l-5.8 4.6 2 7.1L12 17l-6.2 4 2-7.1L2 9.3l7.4-.4z"/></svg></a>
+        </div>
+      </div>
+      <div><h5>Parsippany</h5><p>450 N Beverwyck Rd<br>Parsippany-Troy Hills, NJ 07054<br><a href="tel:+19737946137">973-794-6137</a></p></div>
+      <div><h5>Morristown</h5><p>84 Speedwell Ave<br>Morristown, NJ 07960<br><a href="tel:+19738898884">973-889-8884</a></p></div>
+      <div><h5>Hours</h5><p>Mon–Sat · 11am–9pm<br>Sun · 12pm–9pm<br><a href="mailto:RayhoonNJ@outlook.com">RayhoonNJ@outlook.com</a></p></div>
+    </div>
+    <div class="bigword">Rayhoon · ریحون</div>
+    <div class="legal"><span>© <span id="yr"></span> Rayhoon Persian Kabob House</span><span>Concept redesign preview</span></div>
+  </div>
+</footer>
+
+<!-- mobile action bar -->
+<nav class="actionbar" aria-label="Quick actions">
+  <a href="tel:+19737946137" data-call><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 005 5L15 13l5 2v4a2 2 0 01-2 2A16 16 0 013 6a2 2 0 012-2"/></svg>Call</a>
+  <a href="#" target="_blank" rel="noopener" data-dir><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s-7-6.2-7-11a7 7 0 0114 0c0 4.8-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>Directions</a>
+  <button class="go" data-order><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 7h12l-1 13H7L6 7z"/><path d="M9 7a3 3 0 016 0"/></svg>Order now</button>
+</nav>
+
+<!-- order modal -->
+<div class="modal" id="orderModal" role="dialog" aria-modal="true" aria-labelledby="orderTitle">
+  <div class="sheet">
+    <button class="close" data-close aria-label="Close">✕</button>
+    <div class="eyebrow">Order online</div>
+    <h3 id="orderTitle">Where are you ordering from?</h3>
+    <p class="sub">Pick your Rayhoon, then choose how you'd like it.</p>
+    <div class="loc-switch" role="group" aria-label="Choose location" data-locswitch>
+      <button data-loc="parsippany">Parsippany</button>
+      <button data-loc="morristown">Morristown</button>
+    </div>
+    <div class="platforms" id="platforms"></div>
+    <p class="callrow">Prefer to call? <a href="#" data-call data-callnum></a></p>
+  </div>
+</div>
+
+<script>
+/* ---------- data (from rayhoonkabob.com) ---------- */
+const LOCATIONS = {
+  parsippany:{
+    name:"Parsippany", street:"450 N Beverwyck Rd", city:"Parsippany-Troy Hills, NJ 07054",
+    phone:"973-794-6137", tel:"+19737946137",
+    blurb:"On North Beverwyck Road, an easy stop from home, the office or right off Route 46. Free parking in our lot.",
+    order:[
+      {label:"DoorDash", note:"Delivery or pickup", url:"https://www.doordash.com/store/rayhoon-persian-kabob-house-parsippany-troy-hills-986194", primary:true},
+      {label:"Grubhub", note:"Delivery", url:"https://www.grubhub.com/restaurant/rayhoon-kabob-house-450-n-beverwyck-rd-parsippany/2072923"},
+      {label:"Uber Eats", note:"Delivery", url:"https://www.ubereats.com/store/rayhoon-persian-kabob-house/VIvoh0uIXxKBgYGW8yRZPQ"}
+    ]
+  },
+  morristown:{
+    name:"Morristown", street:"84 Speedwell Ave", city:"Morristown, NJ 07960",
+    phone:"973-889-8884", tel:"+19738898884",
+    blurb:"A short walk north of the Morristown Green, perfect before a show. Street parking on Speedwell and nearby downtown lots.",
+    order:[
+      {label:"Order direct", note:"Pickup or delivery, no marketplace markup", url:"https://order.online/business/452834/store/marjan-persian-grill-1017984", primary:true},
+      {label:"DoorDash", note:"Delivery", url:"https://www.doordash.com/store/marjan-persian-grill-rayhoon-morristown-1017984"}
+    ]
+  }
+};
+// Hours in America/New_York. Day 0 = Sunday. [open, close] as 24h decimals.
+const HOURS = {0:[12,21],1:[11,21],2:[11,21],3:[11,21],4:[11,21],5:[11,21],6:[11,21]};
+
+const V = true;
+// [name, description, vegetarian, farsi, price]
+const MENU = [
+ {cat:"Appetizers", items:[
+  ["Hummus","Mashed chickpeas blended with tahini, olive oil and lemon juice.",V,"حمص"],
+  ["Mirza Ghasemi","Smashed grilled eggplant sautéed with eggs, oven-roasted tomatoes and garlic.",V,"میرزا قاسمی"],
+  ["Kashk-o-Bademjan","Smashed fried eggplant and garlic topped with kashk, walnuts, caramelized garlic and onions.",V,"کشک بادمجان"],
+  ["Mast-o-Moosir","Rayhoon's homemade thick yogurt with imported Iranian shallots.",V,"ماست موسیر"],
+  ["Mast-o-Khiar","Rayhoon's homemade thick yogurt with Persian cucumbers.",V,"ماست و خیار"],
+  ["Dolmeh","Sweet and sour grape leaves stuffed with rice, fresh dill, mint and lemon.",V,"دلمه"],
+  ["Kookoo Sabzi","Herb frittata with leeks, chives, cilantro, dill, parsley, walnuts and barberries.",V,"کوکو سبزی"],
+  ["Falafel","Ground chickpeas, herbs and garlic, fried and served with tahini sauce.",V],
+  ["Tahdig","Crispy crust of saffron rice topped with your choice of ghormeh sabzi or gheymeh.",false,"ته‌دیگ"],
+  ["Torshi","Rayhoon's homemade pickled vegetables.",V,"ترشی"],
+  ["Mediterranean Fries","Fries topped with feta, fresh lime juice and oregano.",V],
+  ["Beef or Chicken Empanadas","",false],
+  ["Chicken Fingers & Fries","",false],
+  ["Olives · Fries · Pickles","Simple sides for the table.",V]
+ ]},
+ {cat:"Soups", items:[
+  ["Ash Reshteh","Persian noodle soup with mixed greens, chickpeas and kidney beans, topped with kashk, caramelized garlic and onions.",V,"آش رشته"],
+  ["Lentil Soup","",false,"سوپ عدس"],["Barley Soup","",false,"سوپ جو"]
+ ]},
+ {cat:"Salads", items:[
+  ["Shirazi Salad","Chopped cucumbers, tomatoes and red onions with house dressing. Add feta.",V,"سالاد شیرازی"],
+  ["Mediterranean Salad","Romaine, kalamata olives, tomatoes, red onion, cucumber, feta and grape leaves with olive-oil vinaigrette.",V],
+  ["Garden Salad","Romaine, tomatoes, Persian cucumbers and red onions with house dressing.",V],
+  ["Olovieh Salad","Potato, chicken, egg, pickle and mayonnaise.",false,"سالاد الویه"]
+ ]},
+ {cat:"Persian Rice", items:[
+  ["Baghali Polo","Saffron basmati rice with dill and fava beans.",V,"باقالی پلو"],
+  ["Albaloo Polo","Saffron basmati rice with sour cherries.",V,"آلبالو پلو"],
+  ["Zereshk Polo","Saffron basmati rice with barberries.",V,"زرشک پلو"]
+ ]},
+ {cat:"Kabobs & Platters", note:"All kabobs and platters are served with saffron basmati rice, grilled tomato and pepper. Side salad or specialty rice +$4.95.", items:[
+  ["Koobideh Kabob","Two skewers of mixed ground beef & lamb.",false,"کوبیده"],
+  ["Barg Kabob","Grilled, marinated, tenderized beef tenderloin.",false,"برگ"],
+  ["Joojeh","Grilled eight-piece marinated spring chicken.",false,"جوجه"],
+  ["Chicken Kabob","Skewers of grilled chicken breast.",false],
+  ["Chenjeh Kabob","Grilled marinated cubes of lamb.",false,"چنجه"],
+  ["Shishlik","Herb-crusted rack of baby lamb chops.",false,"شیشلیک"],
+  ["Beef Soltani","One skewer of barg, one skewer of koobideh.",false,"سلطانی"],
+  ["Bakhtiari","One skewer of barg, one skewer of chicken.",false,"بختیاری"],
+  ["Chicken Soltani","One skewer of chicken breast, one skewer of koobideh.",false],
+  ["Chenjeh Soltani","A skewer of lamb cubes and a skewer of koobideh.",false],
+  ["Mashti Kabob","Two skewers of lamb cube and ground beef with saffron, butter, egg yolk, tomato and rice.",false],
+  ["Rayhoon Especial","One koobideh, ½ skewer chicken, ½ skewer beef.",false],
+  ["Rayhoon Combo","Serves 2–3. Chicken, barg, two koobideh, two rice, two tomatoes.",false],
+  ["Shrimp Kabob","Grilled marinated shrimp.",false],
+  ["Salmon Platter","Saffron and garlic marinated pan-seared salmon.",false],
+  ["Beef Gyro Strips","Gyro strips with rice.",false],
+  ["Falafel Platter","Falafel with saffron rice.",V]
+ ]},
+ {cat:"Persian Entrées", note:"Stews are served with saffron basmati rice.", items:[
+  ["Ghormeh Sabzi","Lamb with parsley, cilantro, chives, fenugreek, kidney beans and dried Iranian limes.",false,"قورمه سبزی"],
+  ["Khoresht Gheymeh","Lamb with yellow split peas, tomato and dried limes, topped with shoestring potatoes.",false,"قیمه"],
+  ["Gheymeh Bademjan","Lamb with split peas, tomato and oven-roasted eggplant.",false,"قیمه بادمجان"],
+  ["Khoresht Fesenjan","Sweet-and-sour chicken with crushed walnuts and pomegranate paste.",false,"فسنجان"],
+  ["Baghali Polo with Lamb Shank","Braised lamb shank with herbs and garlic over dill & fava bean saffron rice.",false,"باقالی پلو با ماهیچه"],
+  ["Chelo Gardan","Braised lamb neck with onion and garlic.",false,"گردن"],
+  ["Halim","Persian oatmeal with neck meat, topped with cinnamon.",false,"حلیم"],
+  ["Kaleh Pacheh","Traditional head & trotters, served with lemon/lime and cinnamon.",false,"کله پاچه"]
+ ]},
+ {cat:"Sandwiches", note:"Toppings: parsley, onion & lime, or lettuce, tomato, onion & pickles. Add fries.", items:[
+  ["Koobideh","Skewer of mixed ground beef & lamb.",false],
+  ["Chicken Kabob","Grilled cubes of chicken breast.",false],
+  ["Barg","Marinated beef tenderloin.",false],
+  ["Chenjeh","Marinated grilled lamb cubes.",false],
+  ["Gyro","Grilled beef strips.",false],
+  ["Falafel","Add hummus.",V],
+  ["Kookoo Sabzi","Persian herb frittata.",V],
+  ["Olovieh","",false],["Bandari","",false],
+  ["Maghz","Lamb brain.",false,"مغز"],["Zaban","Beef tongue.",false,"زبان"]
+ ]},
+ {cat:"Desserts", items:[
+  ["Baklava","",V,"باقلوا"],
+  ["Zoolbia Bamieh","Fried sweets soaked in rose water and saffron syrup.",V,"زولبیا بامیه"],
+  ["Persian Rollet","Vanilla-soaked cake rolled with homemade whipped cream.",V,"رولت"],
+  ["Saffron Ice Cream","Homemade with pistachio, rosewater and cream chunks.",V,"بستنی سنتی"],
+  ["Bastani & Carrot Juice","Saffron ice cream floated in fresh carrot juice.",V,"آب هویج بستنی"]
+ ]},
+ {cat:"Lunch Specials", note:"Monday–Friday 11am–3pm. Served with saffron basmati rice and garden salad.", items:[
+  ["Koobideh Kabob","One skewer of mixed ground beef & lamb.",false,null,"$14.95"],
+  ["Chicken Kabob","Skewer of grilled chicken breast.",false,null,"$14.95"],
+  ["Gyro","Grilled beef strips with tzatziki.",false,null,"$14.95"],
+  ["Falafel","Chickpeas, herbs and garlic, fried.",V,null,"$14.95"]
+ ]},
+ {cat:"Drinks", items:[
+  ["Doogh","Savory yogurt drink.",V,"دوغ"],
+  ["Fresh Carrot · Beet · Orange Juice","Pressed to order, or mix any.",V],
+  ["Organic Chia Seed Drink","",V],
+  ["Persian Tea","",V,"چای"],["Homemade Iced Tea","Unsweetened.",V],
+  ["Soda · Snapple · Pellegrino · Water","",V]
+ ]}
+];
+const CATERING = ["Koobideh","Barg","Chicken","Chenjeh","Jojeh","Shrimp","Salmon","Ghormeh Sabzi","Gheymeh","Gheymeh Bademjan","Fesenjan","Saffron Rice","Grilled Tomato"];
+
+/* ---------- helpers ---------- */
+const $ = s => document.querySelector(s), $$ = s => [...document.querySelectorAll(s)];
+// escape anything that could ever come from a user before it touches markup
+const esc = s => String(s).replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const store = {
+  get(k){try{return localStorage.getItem(k)}catch(e){return null}},
+  set(k,v){try{localStorage.setItem(k,v)}catch(e){}}
+};
+let loc = LOCATIONS[store.get("rayhoon-loc")] ? store.get("rayhoon-loc") : "parsippany";
+let activeCat = "Kabobs & Platters"; // open on the signature category; search covers everything
+
+/* ---------- hours (always New York time, regardless of viewer's timezone) ---------- */
+function nyNow(){
+  const p = Object.fromEntries(new Intl.DateTimeFormat("en-US",{timeZone:"America/New_York",weekday:"short",hour:"numeric",minute:"numeric",hour12:false})
+    .formatToParts(new Date()).map(x=>[x.type,x.value]));
+  return {day:["Sun","Mon","Tue","Wed","Thu","Fri","Sat"].indexOf(p.weekday), t:(+p.hour % 24) + (+p.minute)/60};
+}
+const fmt = h => { const hr=Math.floor(h), m=Math.round((h-hr)*60); return ((hr%12)||12)+(m?":"+String(m).padStart(2,"0"):"")+(hr>=12?"pm":"am"); };
+function openStatus(){
+  const {day,t} = nyNow(); const [o,c] = HOURS[day];
+  if (t>=o && t<c) return {open:true, text: c-t<=1 ? `Open now · closing soon (${fmt(c)})` : `Open now · until ${fmt(c)} tonight`};
+  if (t<o) return {open:false, text:`Opens today at ${fmt(o)}`};
+  return {open:false, text:`Closed · opens tomorrow at ${fmt(HOURS[(day+1)%7][0])}`};
+}
+const isLunchNow = () => { const {day,t}=nyNow(); return day>=1 && day<=5 && t>=11 && t<15; };
+const mapsQ = L => encodeURIComponent(`Rayhoon ${L.street}, ${L.city}`);
+
+/* ---------- render ---------- */
+function renderLoc(){
+  const L = LOCATIONS[loc], st = openStatus();
+  $$("[data-locswitch] button").forEach(b=>b.setAttribute("aria-pressed", b.dataset.loc===loc));
+  $$("[data-call]").forEach(a=>a.href="tel:"+L.tel);
+  $$("[data-callnum]").forEach(a=>a.textContent=`${L.name} · ${L.phone}`);
+  $$("[data-dir]").forEach(a=>a.href=`https://www.google.com/maps/dir/?api=1&destination=${mapsQ(L)}`);
+  $("[data-status]").textContent = `${L.name}: ${st.text}`;
+  $("[data-dot]").classList.toggle("closed",!st.open);
+  $("#platforms").innerHTML = L.order.map(o=>`<a href="${o.url}" target="_blank" rel="noopener" class="${o.primary?'primary':''}"><span>${o.label}<small>${o.note}</small></span><span>→</span></a>`).join("");
+  $("#cl").value = loc;
+  $$(".loc").forEach(el=>el.classList.toggle("active", el.dataset.loc===loc));
+  // keep each card's open/closed badge live (both locations share hours)
+  $$(".status-sm").forEach(s=>{ s.classList.toggle("closed",!st.open); s.querySelector(".dot").classList.toggle("closed",!st.open); s.lastChild.textContent = st.open?"Open now":"Closed now"; });
+}
+function setLoc(l){ loc=l; store.set("rayhoon-loc",l); renderLoc(); }
+
+function renderLocCards(){
+  const st = openStatus();
+  $("#locGrid").innerHTML = Object.entries(LOCATIONS).map(([k,L])=>`
+   <article class="loc reveal" data-loc="${k}">
+     <iframe loading="lazy" title="Map of ${L.name}" src="https://maps.google.com/maps?q=${mapsQ(L)}&z=15&output=embed"></iframe>
+     <div class="body">
+       <div style="display:flex;justify-content:space-between;align-items:center;gap:1rem;flex-wrap:wrap">
+         <h3>${L.name}</h3><span class="status-sm ${st.open?'':'closed'}"><span class="dot ${st.open?'':'closed'}"></span>${st.open?'Open now':'Closed now'}</span>
+       </div>
+       <p class="blurb">${L.blurb}</p>
+       <div class="meta">
+         <div><small>Address</small>${L.street}<br>${L.city}</div>
+         <div><small>Hours</small>Mon–Sat 11am–9pm<br>Sun 12pm–9pm</div>
+       </div>
+       <div class="row">
+         <button class="btn btn-ink" data-order data-orderloc="${k}">Order from ${L.name}</button>
+         <a class="btn btn-line" href="tel:${L.tel}">${L.phone}</a>
+         <a class="btn btn-line" target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&destination=${mapsQ(L)}">Directions</a>
+       </div>
+     </div>
+   </article>`).join("");
+}
+
+function renderTabs(){
+  $("#tabs").innerHTML = ["All", ...MENU.map(c=>c.cat)].map(c=>`<button role="tab" aria-selected="${c===activeCat}" data-cat="${c}">${c}</button>`).join("");
+}
+function renderMenu(){
+  const q = $("#q").value.trim().toLowerCase(), veg = $("#vegOnly").checked;
+  const sections = MENU.filter(c=>activeCat==="All"||c.cat===activeCat);
+  const note = activeCat!=="All" && sections[0]?.note;
+  $("#menuNote").hidden = !note; if (note) $("#menuNote").textContent = note;
+  let html = "", n = 0;
+  sections.forEach(c=>c.items.forEach(([name,desc,v,fa,price])=>{
+    if (veg && !v) return;
+    if (q && !`${name} ${desc} ${c.cat}`.toLowerCase().includes(q)) return;
+    html += `<div class="item" style="animation-delay:${Math.min(n++,14)*30}ms">
+      <div class="item-top"><h4>${name}</h4>${v?'<span class="v" title="Vegetarian">V</span>':''}${fa?`<span class="fa">${fa}</span>`:''}${price?`<span class="price">${price}</span>`:''}</div>
+      ${desc?`<p>${desc}</p>`:''}${activeCat==="All"?`<p class="cat">${c.cat}</p>`:''}
+    </div>`;
+  }));
+  $("#menuList").innerHTML = html || `<div class="empty">No dishes match “${esc(q)}”. Try “kabob” or “saffron”.</div>`;
+}
+
+/* ---------- init ---------- */
+$("#yr").textContent = new Date().getFullYear();
+const names = ["Koobideh","Barg","Joojeh","Ghormeh Sabzi","Tahdig","Fesenjan","Zereshk Polo","Kashk-o-Bademjan","Shishlik","Saffron Ice Cream","Doogh","Baklava"];
+$("#marquee").innerHTML = [...names,...names].map(n=>`<span>${n}</span>`).join("");
+$("#trays").innerHTML = CATERING.map(t=>`<label><input type="checkbox" name="trays" value="${t}"><span>${t}</span></label>`).join("");
+if (isLunchNow()) $("#announce").innerHTML = "<b>Lunch specials on now</b> · $14.95 until 3pm";
+renderLocCards(); renderTabs(); renderMenu(); renderLoc();
+setInterval(renderLoc, 60000);
+
+document.addEventListener("click", e=>{
+  const sw = e.target.closest("[data-locswitch] button"); if (sw) setLoc(sw.dataset.loc);
+  const ob = e.target.closest("[data-order]");
+  if (ob){ if (ob.dataset.orderloc) setLoc(ob.dataset.orderloc); closeDrawer(); openModal(); }
+  const tab = e.target.closest("#tabs button"); if (tab){ activeCat = tab.dataset.cat; renderTabs(); renderMenu(); }
+  if (e.target.closest("[data-close]") || e.target.id==="orderModal") closeModal();
+  if (e.target.closest(".drawer a.l")) closeDrawer();
+});
+$("#q").addEventListener("input", ()=>{ if ($("#q").value && activeCat!=="All"){ activeCat="All"; renderTabs(); } renderMenu(); });
+$("#vegOnly").addEventListener("change", renderMenu);
+$("#cl").addEventListener("change", e=>setLoc(e.target.value));
+
+const modal = $("#orderModal"); let lastFocus;
+function openModal(){ lastFocus=document.activeElement; modal.classList.add("open"); setTimeout(()=>modal.querySelector(".platforms a")?.focus(),50); }
+function closeModal(){ if(!modal.classList.contains("open")) return; modal.classList.remove("open"); lastFocus?.focus?.(); }
+document.addEventListener("keydown", e=>{ if (e.key==="Escape"){ closeModal(); closeDrawer(); } });
+const drawer = $("#drawer");
+$("#burger").onclick = ()=>{ drawer.classList.add("open"); drawer.setAttribute("aria-hidden","false"); };
+function closeDrawer(){ drawer.classList.remove("open"); drawer.setAttribute("aria-hidden","true"); }
+$("#drawerClose").onclick = closeDrawer;
+
+// catering form (demo: validates and confirms; wire to email/CRM when going live)
+const minDate = new Date(); minDate.setDate(minDate.getDate()+2);
+$("#cd").min = minDate.toISOString().slice(0,10);
+$("#catForm").addEventListener("submit", e=>{
+  e.preventDefault();
+  const f = e.target; let ok = true;
+  ["name","phone","date","guests"].forEach(n=>{ const el=f.elements[n]; const bad=!el.value.trim() || !el.checkValidity(); el.classList.toggle("err",bad); if(bad) ok=false; });
+  if (!ok){ f.querySelector(".err")?.focus(); return; }
+  const L = LOCATIONS[f.elements.loc.value];
+  const trays = [...f.querySelectorAll('input[name=trays]:checked')].map(i=>i.value);
+  const d = new Date(f.elements.date.value+"T12:00").toLocaleDateString("en-US",{weekday:"long",month:"long",day:"numeric"});
+  $("#catOkMsg").textContent = `Thanks, ${f.elements.name.value.trim().split(" ")[0]}! Our ${L.name} team will call you at ${f.elements.phone.value} about your ${f.elements.guests.value}-guest event on ${d}${trays.length?` (${trays.slice(0,4).join(", ")}${trays.length>4?"…":""})`:""}.`;
+  $("#catFields").hidden = true; $("#catOk").hidden = false;
+});
+
+// scroll reveals
+const io = new IntersectionObserver(es=>es.forEach(x=>{ if (x.isIntersecting){ x.target.classList.add("in"); io.unobserve(x.target); } }),{threshold:.12});
+$$(".reveal").forEach(el=>io.observe(el));
+</script>
+</body>
+</html>

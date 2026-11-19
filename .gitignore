@@ -1,0 +1,5 @@
+.DS_Store
+.remember/
+.playwright-mcp/
+.vercel/
+read_me.txt
